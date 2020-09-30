@@ -12,6 +12,7 @@
             position: absolute;
             left: 655px;
             top: 188px;
+            border:10px solid springgreen;
         }
         #box2{
             background-color:red;
@@ -20,12 +21,14 @@
             position: absolute;
             left: 655px;
             top: 188px;
+            border:10px solid blue;
         }
     </style>
 </head>
+
 <body>
     <div id="box1"class="box"></div>
-    <div id="box2"class="box"></div>
+    <div id="box2"class="box"></div>   
     <br>
     <br>
     <br>
@@ -35,7 +38,7 @@
         target.onclick = function(){
               var leftValue = document.getElementById("box1").style.left;
               leftValue =leftValue.replace("px","");
-              leftValue =Number(leftValue)+ 25;
+              leftValue =Number(leftValue)+ 24;
               document.getElementById("box1").style.left=leftValue+"px";
         }
     </script>
