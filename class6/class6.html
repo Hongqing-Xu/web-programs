@@ -9,33 +9,33 @@
             background-color: blue;
             width: 188px;
             height: 188px;
-          /*  position: absolute;
+            position: absolute;
             left: 655px;
-            top: 188px;*/
+            top: 188px;
         }
         #box2{
             background-color:red;
             width: 188px;
             height: 188px;
-           /* position: absolute;
+           position: absolute;
             left: 655px;
-            top: 188px;*/
+            top: 188px;
         }
     </style>
 </head>
 <body>
-    <div id="box1"class="box1class"></div>
-    <div id="box2"class="box2class"></div>
+    <div id="box1"class="box"></div>
+    <div id="box2"class="box"></div>
     <br>
     <br>
     <br>
-    <input type="text" id="btn1"value="请点击我">
+    <input type="button" id="btn1"value="请点击我">
     <script>
         var target = document.getElementById("btn1");
         target.onclick = function(){
               var leftValue = document.getElementById("box1").style.left;
               leftValue =leftValue.replace("px","");
-              leftValue =Number(leftValue)+ 5;
+              leftValue =Number(leftValue)+ 25;
               document.getElementById("box1").style.left=leftValue+"px";
         }
     </script>
