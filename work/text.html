@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的校园</title>
+    <style type="text/css">
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    .nav{
+        width:1535px;
+        height:40px;
+        margin:0 auto;
+        background-color:rgb(70, 69, 69);
+        position: absolute;
+        top: 120px;
+    }
+    ul{
+        list-style:none;
+       
+              
+    }
+    ul li{
+        float:left;
+        line-height:40px;
+        width: 300px;
+        text-align:center;
+        position:relative;
+        
+    }
+    a{
+        text-decoration:none;
+        color:rgb(255, 255, 255);
+        display:block;
+        padding:0 10px;
+        
+    }
+    a:hover{
+        color:rgb(26, 27, 27);
+        background-color:rgb(63, 196, 248);
+   }
+   ul li ul{
+       position:absolute;
+       left:0px;
+       top:40px;
+       display:none;
+       
+ }
+   ul li ul li{
+       float:none;
+       background-color:rgb(110, 109, 109);
+       margin-top:2px;
+       color: black;
+   }
+  
+   ul li ul li a:hover{
+       background-color:aqua;
+   }
+ 
+   ul li:hover ul{
+       display:block;
+         }
+    .title{
+        background-color: rgb(99, 31, 163);
+            width: 1535px;
+            height: 120px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+    }
+    .content{
+        background-color: rgb(99, 31, 163);
+        width: 680px;
+        height: 540px;
+        position: absolute;
+        left: 855px;
+        top: 160px;
+        text-align:center;
+        line-height: 130px;
+        z-index: -1;
+    }
+    .charater{
+        color: white;
+        border: solid;
+    }
+    .ending{
+        background-color: rgb(99, 31, 163);
+        width: 1533px;
+        height: 46px;
+        position:absolute;
+        left: 0px;
+        top: 705px;
+    }
+        #BJ{          
+             text-align: center;     
+        }
+        #img{           
+            width: 857px;
+            height: 545px;
+            position: absolute;
+            left: 0px;
+            top: 160px;
+            z-index: -1;
+        }
+        #ol{
+            position: absolute;   
+            bottom: 85px;       
+            width: 100%;       
+            text-align: center; 
+            right: 15px;
+        }
+  
+    </style>  
+</head>
+<script type="text/javascript">
+        var index=0;
+        var imgs=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"]; 
+        function qiehuan(){
+            document.getElementById("img").src=imgs[index];
+            index++;
+            if(index > 4){
+                index=0;  
+            }
+        }
+      setInterval("qiehuan()",3000); 
+    </script>
+<body>
+    <div class="title">
+        <img src="LOGO.png" width="830px" height="100px" alt="ahead">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">学校概况</a>
+            <ul>
+                <li>
+                    <a href="https://www.jxuspt.com/Z01_XXGK/SchoolIntroduction.jsp"><span>学校简介</span></a>
+                    </li>
+                    <li>
+                    <a href="https://www.jxuspt.com/Z01_XXGK/SchoolEvolution.jsp"><span>历史沿革</span></a>
+                    </li>
+                    <li>
+                    <a href="https://www.jxuspt.com/Z01_XXGK/Characteristics.jsp"><span>大学精神</span></a>
+                    </li>
+                    <li>
+                    <a href="https://www.jxuspt.com/Z01_XXGK/CurrentLeadership.jsp"><span>学校领导</span></a>
+                    </li>
+                    <li>
+                    <a href="https://www.jxuspt.com/Z01_XXGK/Environment.jsp"><span>学校环境</span></a>
+                    </li>
+            </ul>
+               
+            <li ><a href="#">新闻中心</a>
+            <ul>
+                <li>
+                    <a href="https://www.jxuspt.com/Z02_XWZX/SchoolNews.jsp"><span>学校新闻</span></a>
+                    </li>
+                    <li>
+                    <a href="https://www.jxuspt.com/Z02_XWZX/MediaGather.jsp"><span>媒体聚焦</span></a>
+                    </li>
+                    <li>
+                    <a href="https://www.jxuspt.com/Z02_XWZX/NewsPhoto.jsp"><span>历史图片</span></a>
+                    </li>
+                    <li>
+                    <a href="https://www.jxuspt.com/Z02_XWZX/InstituteVideo.jsp"><span>历史视频</span></a>
+                    </li>
+                    <li>
+                    <a href="https://www.jxuspt.com/Z02_XWZX/noticebulletin.jsp"><span>通知公告</span></a>
+                    </li>
+            </ul>
+        </li>
+            <li><a href="#">机构设置</a>
+                <ul>
+                    <li>
+                        <a href="http://rjxy.jxuspt.com/"><span>软件工程学院</span></a>
+                        </li>
+                        <li>
+                        <a href="http://47.112.153.42:8082/"><span>网络工程学院</span></a>
+                        </li>
+                        <li>
+                        <a href="http://xxjsxy.jxuspt.com/"><span>信息技术学院</span></a>
+                        </li>
+                        <li>
+                        <a href="http://jgfy.jxuspt.com:8081/"><span>经济管理学院</span></a>
+                        </li>
+                        <li>
+                        <a href="http://branch.jxuspt.com:8081/JIIE/BlockChainedu.jsp"><span>区块链学院</span></a>
+                        </li>
+                        <li>
+                        <a href="http://branch.jxuspt.com:8081/vr/index.jsp"><span>VR与艺术学院</span></a>
+                        </li>
+                        <li>
+                        <a href="http://branch.jxuspt.com:8081/newmediacollege/index.jsp"><span>新媒体学院</span></a>
+                        </li>
+                        <li>
+                        <a href="http://international.jxuspt.com"><span>国际学院</span></a>
+                        </li>
+                        <li>
+                        <a href="http://branch.jxuspt.com:8081/chuangxinye/index.jsp"><span>创新学院</span></a>
+                        </li>
+                        <li class="last">
+                        <a href="http://branch.jxuspt.com:8081/ContinuingEducation/index.jsp"><span>继续教育学院</span></a>
+                        </li>
+                </ul>
+            </li>
+            <li><a href="#">师资队伍</a>
+                <ul>
+                    <li>
+                        <a href="https://www.jxuspt.com/Z04_SZDW/TeachersProfiles.jsp"><span>师资概况</span></a>
+                        </li>
+                        <li>
+                        <a href="https://www.jxuspt.com/Z04_SZDW/FamousMasters.jsp"><span>教师风采</span></a>
+                        </li>
+                        <li>
+                        <a href="https://www.jxuspt.com/Z04_SZDW/TalentRecruitment.jsp"><span>人才招聘</span></a>
+                        </li>
+                </ul>
+            </li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="content_backgroud">
+        <h1><div class="charater"><a href="https://www.jxuspt.com/Z02_XWZX/SchoolNews.jsp"><span>学校新闻</span></a></div>
+            <div class="charater"><a href="https://www.jxuspt.com/Z02_XWZX/noticebulletin.jsp"><span>通知公告</span></a></div>
+            <div class="charater"><a href="https://www.jxuspt.com/Z05_JYJX/TeachingEnvironment.jsp"><span>教学咨询</span></a></div>
+            <div class="charater"><a href="https://www.jxuspt.com/Z09_ZJXY/StudentClub.jsp"><span>学团工作</span></div>
+        </h1>   
+        </div>
+    </div>
+    <div class="ending">
+        <div class="ending_text">学习地址:江西省南昌市先锋创客小镇</div>
+        <div class="ending_text">邮编:330041</div>
+    </div>
+    <div>
+    <div id="BJ">
+        <img src="1.jpg" id="img">
+    </div>
+    </div>
+    </body>
+    </html>
+
