@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式</title>
+    <style>
+        div{
+            width: 200px;
+            height:200px;
+            background-color: red;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        #three{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        .son>li{
+            border: 1px solid red;
+        }
+        .six.six{
+            color: red;
+            
+        }
+        .descendant li{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>标签选择器</div>
+    <div class="two">类选择器</div>
+    <div id="three">id选择器</div>
+    <ul class="son">
+        <li>子代选择器</li>
+        <ul>
+            <li>通过></li>
+            <ul>
+                <li>实现</li>
+            </ul>
+    </ul>
+    </ul>
+    <ul class="descendant">
+        <li>后代选择器</li>
+        <ul>
+            <li>通过一个</li>
+            <ul>
+                <li>空格实现</li>
+            </ul>
+    </ul>
+    </ul>
+    <p class="six">交集选择器</p>
+    <p>中间</p>
+    <p class="six">什么也不加</p>
+</body>
+</html>
