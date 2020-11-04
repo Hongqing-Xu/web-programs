@@ -9,6 +9,7 @@
             width: 200px;
             height:200px;
             background-color: red;
+            display: inline-block;
         }
         .two{
             width: 200px;
@@ -23,12 +24,19 @@
         .son>li{
             border: 1px solid red;
         }
-        .six.six{
+        p.p{
             color: red;
             
         }
         .descendant li{
             border: 1px solid red;
+        }
+        h1,#mes{
+            color: red;
+            display: inline-block;
+        }
+        h3+h4{
+            color: orange;
         }
     </style>
 </head>
@@ -54,8 +62,14 @@
             </ul>
     </ul>
     </ul>
-    <p class="six">交集选择器</p>
+    <p class="p">交集选择器</p>
     <p>中间</p>
-    <p class="six">什么也不加</p>
-</body>
+    <p class="p">什么也不加</p>
+    <h1>并集选择器:</h1>
+    <h2 id="mes">定义时用逗号隔开</h2>
+    <h3>兄弟选择器</h3>
+    <h4>兄弟选择器</h4>
+    <h4>兄弟选择器</h4>
+    
+    </body>
 </html>
