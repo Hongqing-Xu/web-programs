@@ -158,3 +158,5 @@ class Furit {
 //     console.log(girl.name); //'rascal'
 //     console.log(boy.hobby===girl.hobby); //true
 
+
+
