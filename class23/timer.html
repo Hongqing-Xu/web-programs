@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+</head>
+<body>
+    <form name="display1">   
+        <input type="text" id="box1" name="box1" value="0" size="4" />   
+        <input type="button" value="停止计时" onclick="clearTimeout(meter1)" />   
+        <input type="button" value="继续计时" onclick="count1() " />   
+    </form>   
+    <p></p>  
+    <form name="display2">   
+        <input type="text" id="box2" name="box2" value="0" size="4" />   
+        <input type="button" value="停止计时" onclick="clearTimeout(meter2) " />   
+        <input type="button" value="继续计时" onclick="count2( ) " />   
+    </form>
+    <script src="timer.js"></script>
+</body>
+
+</html>
